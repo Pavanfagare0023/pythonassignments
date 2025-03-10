@@ -90,5 +90,20 @@ temp=0
     else:
             print('{num} is not prime number')
 
+num=int(input('Enter a number :'))
+sum=0
+temp=num
 
+# 11.  Accept the number & check number is Armstrong number
+num=int(input('Enter a number :'))
+temp=num
+sum=0
+while num!=0:
+    sum=sum+(r*r*r)
+    num//=10
+    
+    if temp==num:
+        print('Armstrong Number', sum)
+    else:
+        print('Not a Armstrong Number')
  
