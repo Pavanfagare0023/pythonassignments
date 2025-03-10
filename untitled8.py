@@ -81,12 +81,14 @@ if n8 == rev:
 num=int(input('Enter a number :'))
 i=2
 temp=0
-if num>1:
     while i<num:
-        if num%i==0:
-            print('{num} is prime number')
-        else:
-            print('{num} is not prime number')
+         if(n%i==0):
+        temp=1
         i+=1
+    if temp==0:
+        print('{num} is prime number')
+    else:
+            print('{num} is not prime number')
+
 
  
