@@ -49,6 +49,16 @@ chr= "uneducated genius is almost proverb"
 print(chr.upper())
 
 # 10. Python program to convert lowercase vowel to uppercase in string.
+str= "Enter a character"
+vowels="aeiouAEIOU"
+result=""
+
+for chr in str:
+    if chr in vowels:
+        str+= chr.upper()
+    else:
+        str+= chr
+print(str)
 
 
 # 11. Python program to delete vowels in a given string.
@@ -59,7 +69,21 @@ for c in str:
     print(str)
     
 # 12. Python program to count Occurrence Of Vowels & Consonants in a String.
+str= "Enter a character"
+vowel="aeiouAEIOU"
+consonant="BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz"
 
+vowel_count=0
+consonant_count=0
+
+for chr in str:
+    if chr in vowels:
+        vowel_count+= 1
+    else:
+        consonant_count+= 1
+        
+print("vowel": vowel_count)
+print("Consonant": consonant_count)
 
 # 13. Python program to count alphabets, digits and special characters.
 s5="There are 500 cars @ backyards"
@@ -89,4 +113,12 @@ for b in s6:
     
     
 # 15. WAP to replace every character by its next subsequent character.
+str=input("Enter a character: ")
+result= ""
 
+for chr in str:
+    if ('0'<= chr <='9'):
+        result+= str(ord(chr)+1)
+    else:
+        result+= chr
+print(result)
